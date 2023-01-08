@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D&G Jewellers| About us</title>
+	 <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav class="nav nav_top">
+		<div class="logo">
+			<a href="index.html"><img src="images/h.jpg" width="100" height="50"></a>
+		</div>
+		<div class="nav_side">
+			<a href="about.html">About Us</a>
+			<a href="service.html">Services</a>
+			<a href="blog.html">Blogs</a>
+			<a href="contact.html">Contacts</a>
+			<a href="register">Login/Register</a>
+		</div>
+	</nav>
+
+<div class="about_us">
+	<div class="about_img">
+		<img src="images/diamonds.webp" width="auto" height="400">
+	</div>
+		<div class="about_content">
+			<h2>ABOUT US</h2>
+			<p>We make fashioned jewellery for the woman who looks to jewellery to express herself. The charming collections are elegant and exciting, powerful and playful, trendy and tasteful, and fine as much as they are fun. Our necklaces, bangles, rings, pendants,earrings and bracelets are made to mirror the woman who asserts herself in every sphere of her life, and looks great while doing so.</p> 
+			<h2>OUR MISSION</h2>
+			<p>Our mission is to make beautiful jewellery accessible. Jewellery that not only makes a woman look beautiful but also make her feel beautiful and loved.Our style is relentlessly modern, yet intensely respectful of traditions.
+			We always look for better and newer ways to do things; from the designs that we make to the experiences that we deliver.
+			We are open in our interactions with our customers. Our prices and policies are always transparent.</p>
+		</div>
+</div>
+
+	 <div class="feed">
+	<h2>Write a Review</h2>
+	<div class="feed_form">
+		<form name="submit-googlesheet" method="post">
+			<input type="text" name="Name" placeholder="Name"><br>
+			<input type="email" name="Email" placeholder="Email-ID"><br>
+			<input type="number" name="Number" placeholder="Contact Number"><br>
+			<textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+			<button type="submit">SUBMIT</button>
+		</form>
+	</div>
+</div>
+
+<footer>
+		
+	<div class="pages">
+		<h3>Pages</h3>
+		<a href="about.html">About us</a>|
+		<a href="blog.html">Blogs</a>|
+		<a href="service.html">Services</a>|
+		<a href="register.html">Register/login</a>
+	</div>
+	<div class="doc">
+		<h3>Documents</h3>
+		<a href="">Privacy Policy</a>|
+		<a href="">Terms of Use</a>|
+		<a href="">Refund</a>
+	</div>
+	<div class="social">
+		<h3>Follow Us</h3>
+		<a href="https://www.facebook.com/pages/category/Education-Website/1Stopai-102490171820303/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		<a href="https://in.linkedin.com/company/1stop-ai" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/1stop.ai/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	</div>
+	<div class="contact">
+		<h3>Contact Us</h3>
+		<a href="https://api.WhatsApp.com/send?phone=+917997015998" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+		<a href="tel: +917997015998" target="_blank"><i class="fa fa-mobile" aria-hidden="true"></i></a>
+		<a href="mailto: keerthana.dvs04@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+	</div>
+	<hr>
+	<p>Copyright &copy; 2021 D&G Jewellers . All rights reseved</p>
+</footer>
+
+
+<script type="text/javascript">
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbw6me7ZvDiH_kwp61CZEqRVG8a-_V9ooQIu49SRlUq6_NJ0o5FEr0FKofkvEBFm6iqAXg/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for the review,hope you had great shopping with us.."))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
+</body>
+</html>

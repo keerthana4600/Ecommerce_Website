@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>D&G Jewellers| About us</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav class="nav nav_top">
+    <div class="logo">
+      <a href="index.html"><img src="images/h.jpg" width="100" height="50"></a>
+    </div>
+    <div class="nav_side">
+      <a href="about.html">About Us</a>
+      <a href="service.html">Services</a>
+      <a href="blog.html">Blogs</a>
+      <a href="contact.html">Contacts</a>
+      <a href="register.html">Login/Register</a>
+    </div>
+  </nav>
+
+
+<div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+        <input type='password'class='input-field'placeholder='Enter Password' required>
+        <input type='checkbox'class='check-box'><span>Remember Password</span>
+        <button type='submit'class='submit-btn'>Log in</button>
+     </form>
+     <form id='register' class='input-group-register'>
+         <input type='text'class='input-field'placeholder='First Name' required>
+         <input type='text'class='input-field'placeholder='Last Name ' required>
+         <input type='email'class='input-field'placeholder='Email Id' required>
+         <input type='password'class='input-field'placeholder='Enter Password' required>
+         <input type='password'class='input-field'placeholder='Confirm Password'  required>
+         <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+           </form>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    
+  <div class="pages">
+    <h3>Pages</h3>
+    <a href="about.html">About us</a>|
+    <a href="blog.html">Blogs</a>|
+    <a href="service.html">Services</a>|
+    <a href="register.html">Register/login</a>
+  </div>
+  <div class="doc">
+    <h3>Documents</h3>
+    <a href="">Privacy Policy</a>|
+    <a href="">Terms of Use</a>|
+    <a href="">Refund</a>
+  </div>
+  <div class="social">
+    <h3>Follow Us</h3>
+    <a href="https://www.facebook.com/pages/category/Education-Website/1Stopai-102490171820303/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://in.linkedin.com/company/1stop-ai" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/1stop.ai/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  </div>
+  <div class="contact">
+    <h3>Contact Us</h3>
+    <a href="https://api.WhatsApp.com/send?phone=+917997015998" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+    <a href="tel: +917997015998" target="_blank"><i class="fa fa-mobile" aria-hidden="true"></i></a>
+    <a href="mailto: keerthana.dvs04@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  </div>
+  <hr>
+  <p>Copyright &copy; 2021 D&G Jewellers . All rights reseved</p>
+</footer>
+
+ <script>
+        var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register()
+    {
+      x.style.left='-400px';
+      y.style.left='50px';
+      z.style.left='110px';
+    }
+    function login()
+    {
+      x.style.left='50px';
+      y.style.left='450px';
+      z.style.left='0px';
+    }
+  </script>
+  <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
